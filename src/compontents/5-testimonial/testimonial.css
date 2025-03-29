@@ -1,0 +1,22 @@
+.testimonial {
+  background-color: var(--background-color-2);
+}
+
+.testimonial__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonial__container .section__header {
+  margin-bottom: 1rem;
+}
+
+@media (width > 768px) {
+  .testimonial__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial__content :is(.section__header, .section__description) {
+    text-align: left;
+  }
+}

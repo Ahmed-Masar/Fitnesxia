@@ -1,0 +1,36 @@
+.about {
+  background-color: var(--background-color-1);
+  overflow: hidden;
+}
+
+.about__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.about__image img {
+  max-width: 500px;
+  margin-inline: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.about__content :is(.section__header, .section__description) {
+  margin-bottom: 1rem;
+}
+
+.about__btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (width > 768px) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about__content :is(.section__header, .section__description, .about__btn) {
+    text-align: left;
+  }
+}
