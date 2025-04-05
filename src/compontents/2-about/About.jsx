@@ -21,7 +21,7 @@ const About = () => {
           className="about__image"
           initial={{ opacity: 0, transform: "translateX(-30px)" }}
           animate={
-            hasAnimated ? { opacity: 1, transform: "translateY(0)" } : undefined
+            hasAnimated ? { opacity: 1, transform: "translateX(0)" } : undefined
           }
           transition={{ duration: 0.5 }}
         >
